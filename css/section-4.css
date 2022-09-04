@@ -1,0 +1,36 @@
+.s4-background {
+    background-color: var(--secondaryLess);
+
+    display: flex;
+    align-items: center;
+}
+
+.s4-contact{
+    margin-top: 85px;
+}
+
+.s4-tile{
+    margin: 30px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s4-tile-icon{
+    margin-right: 20px;
+}
+
+@media (max-width: 750px) {
+    .s4-contact{
+        margin-top: 50px;
+    }
+    .s4-tile-icon{
+        margin-right: 20px;
+        height: 35px;
+        width: 35px;
+    }
+    .s4-tile{
+        margin: 20px 0;
+    }
+}

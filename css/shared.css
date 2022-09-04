@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --primaryLess: #E3F2E6;
+    --primary: #A2D5AC;
+    --primaryMore: #82AA8A;
+    --secondaryLess: #D2EAE9;
+    --secondary: #1F948F;
+    --secondaryMore: #197672;
+    --light: #FBFFFC;
+    --dark: #808080;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 62.5%;
+
+    scroll-behavior: smooth;
+}
+
+header {
+    position: absolute;
+    top: 100px;
+    right: 80px;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+}
+
+header li{
+    list-style-type: none;
+    margin: 20px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 60px;
+    background: var(--secondary);
+    
+    color: var(--light);
+    font-size: 1.68rem;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+
+    color: var(--secondary);
+    font-size: 19px;
+    font-weight: 600;
+}
+
+a:hover {
+    color: var(--secondaryMore);
+    transition: 0.5s;
+}
+
+.active{
+    color: var(--primary);
+}
+
+.limit-content{
+    width: 100%;
+    max-width: 1368px;
+    margin: 100px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 4.0rem;
+    line-height: 130%;
+
+    text-align: center;
+    color: var(--secondaryMore);
+
+    max-width: 1000px;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 3.3rem;
+    line-height: 110%;
+
+    text-align: center;
+    color: var(--primaryMore);
+}
+
+h5 {
+    font-weight: 400;
+    font-size: 2.52rem;
+    line-height: 110%;
+    
+    text-align: center;
+    color: var(--dark);
+
+    max-width: 800px;
+    margin-top: 15px;
+}
+
+@media (max-width: 1368px) {
+    header {
+        top: 100px;
+        right: 40px;
+    }
+}
+
+@media (max-width: 750px) {
+    html {
+        font-size: 37.5%;
+    }
+    header {
+        right: 20px;
+        top: 160px;
+    }
+    header ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        height: 40px;
+    }
+    .limit-content{
+        margin: 60px auto;
+        padding: 0 20px;
+    }
+    h5 {
+        max-width: 300px;
+    }
+}
+
