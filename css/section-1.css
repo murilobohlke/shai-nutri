@@ -56,7 +56,7 @@
 @media (max-width: 750px) {
     .s1-limit-content{
         flex-direction: column;
-        height: 780px;
+        height: 750px;
     }
     .s1-image{
         width: 440px;
@@ -69,5 +69,21 @@
         height: 139px;
 
         margin-bottom: 80px;
+        margin-right: 0;
     }
 }
+
+
+@media (max-width: 450px) {
+    .s1-image{
+        width: 380px;
+        height: 362px;
+
+        top: 30px;
+    }
+    .s1-limit-content{
+        flex-direction: column;
+        height: 700px;
+    }
+}
+
